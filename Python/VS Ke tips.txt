@@ -1,0 +1,6 @@
+agar mujhe opencv_baiscs ke projects ko open karna hai to termainal mai ja kar ke ye karna hai.
+1. cd spacebar dabana hai phir jo folder ke files open karna hai uska name type karna hai isse wo open ho jayega.
+2. And agar mujhe back karna hai to cd spacebar .. type karna hai. jisse mai us folder ke program se exit ho jaunga.
+3. agar mujhe teminal se wapas code likhne wale area me jana hai to ctl + backtip(tab bar ke uppar wala button) press karna hai.
+4. Terminal mai ja kar ke apko jo file run karni hai uska phele to jisse thogh aap run karwna chate ho uska naam likho and then us file a naam likho jisko aap exicute karna hai uska naam type karo.
+ 
