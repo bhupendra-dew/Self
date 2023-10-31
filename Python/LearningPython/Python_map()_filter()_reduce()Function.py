@@ -117,3 +117,17 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 result = list(filter(lambda x: is_multiple_of_3(x), numbers))
 print(result)
 """
+# Reduce Function
+# python code to demonstrate working of reduce() function
+"""
+import functools
+lis = [1,2,3,4,5,6,7]
+print("sum : ", end="")
+print(functools.reduce(lambda a, b: a+b, lis))
+print("max : ", end = "")
+print("max : ", end="")
+print(functools.reduce(lambda a, b : a if a > b else b, lis))
+"""
+# Operator function
+
+# 
