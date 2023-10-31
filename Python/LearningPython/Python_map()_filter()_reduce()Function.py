@@ -117,6 +117,7 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 result = list(filter(lambda x: is_multiple_of_3(x), numbers))
 print(result)
 """
+#---------------------------------------------------------------------------
 # Reduce Function
 # python code to demonstrate working of reduce() function
 """
@@ -129,5 +130,49 @@ print("max : ", end="")
 print(functools.reduce(lambda a, b : a if a > b else b, lis))
 """
 # Operator function
+'''
+import functools
+import operator
+lis = [1, 3, 5, 6, 2]
 
-# 
+print("Sum : ", end="")
+print(functools.reduce(operator.add, lis))
+print("Product : ", end="")
+print(functools.reduce(operator.mul, lis))
+print("Concatenated Product : ", end="")
+print(functools.reduce(operator.add, ["geeks", "for", "geeks"]))
+'''
+# reduce() vs accumulated()
+'''
+Both reduce() and accumulate() can be used to calculate the summation of a sequence elements. But there are differences in the implementation aspects in both of these.  
+
+reduce() is defined in “functools” module, accumulate() in “itertools” module.
+reduce() stores the intermediate result and only returns the final summation value. Whereas, accumulate() returns a iterator containing the intermediate results. The last number of the iterator returned is summation value of the list.
+reduce(fun, seq) takes function as 1st and sequence as 2nd argument. In contrast accumulate(seq, fun) takes sequence as 1st argument and function as 2nd argument.
+'''
+# using reduce() and accumulate() functions
+'''
+import itertools # accumulate()
+import functools # reduce()
+lis = [1, 3, 4, 10, 4]
+print("The summation of list using accumulate is : ", end="")
+print(list(itertools.accumulate(lis, lambda x, y: x + y)))
+print("Summation of list using reduce : ", end="")
+print(functools.reduce(lambda x, y: x + y, lis))
+'''
+
+# reduce() functio with three parameters
+'''x
+# Python program to illustrate the sum of two numbers
+def reduce(function, iterable, initializer=None):
+    it = iter(iterable)
+    if initializer is None:
+        value = next(it)
+    else:
+        value = initializer
+    for elemnet in it:
+        value = function(value, elemnet)
+    return value
+tup = (2, 1, 0, 2, 2, 0, 0, 2)
+print(reduce(lambda x, y: x+y, tup, 6))
+'''
