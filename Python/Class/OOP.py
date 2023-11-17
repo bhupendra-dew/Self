@@ -27,7 +27,7 @@ Tommy = Dog("Tommy")
 Rodger.speak()
 Tommy.speak()
 '''
-
+'''
 class Person(object):
     def __init__(self, name, idnumber) -> None:
         self.name = name
@@ -54,3 +54,29 @@ class Employee(Person):
 a = Employee("Rahul", 886012, 200000, "Intern")
 a.display()
 a.details()
+'''
+'''
+class Student:
+    def __init__(self, studentName, studentSurname, studentRollNo) -> None:
+        self.name = studentName
+        self.surname = studentSurname
+        self.rollNo = studentRollNo
+        pass
+
+    def getStudentDetails(self):
+        print("The name of the student is", self.name, self.surname)
+        print("The roll number of the student is", self.rollNo)
+
+student1 = Student("Ashu", "Dewangan", 17)
+student1.getStudentDetails()
+'''
+
+class MyClass:
+    __hiddenVariable = 0
+    def add(self, increment):
+        self.__hiddenVariable += increment
+        print(self.__hiddenVariable)
+myObject = MyClass()
+myObject.add(2)
+myObject.add(5)
+print(myObject.__hiddenVariable)
