@@ -165,5 +165,17 @@ class Cars():
         print("The model is :", self.model)
         print("The Color is :", self.color)
 
-car_no = int(input("Enter the number of cars you wnat to store: "))
+audi = Cars("Audi", "A4", "Blue")
+ferrari = Cars("Ferrari", "Ferrari 488", "red")
+lemborgani = Cars("Lemborgani", "Hurrican", "Black")
+dodge = Cars("Dodge", "Hell Cat", "Purple")
 
+audi.show()
+ferrari.show()
+lemborgani.show()
+dodge.show()
+
+print("The company of the car is", audi.company)
+print("The color of the car is", audi.color)
+print("The model of the dodge is", dodge.model)
+print("The model of Lemborgani is", lemborgani.model)
