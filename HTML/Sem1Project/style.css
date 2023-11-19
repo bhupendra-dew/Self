@@ -1,7 +1,7 @@
 body, html{
     background-color: #fff;
     font-family: "Playfair Display", serif;
-    overflow: hidden !important;
+    overflow-x: hidden !important;
     margin: 0px !important;
     padding: 0px !important;
 }
@@ -13,10 +13,10 @@ body, html{
 .nav{
     position: fixed;
     z-index: 1000;
-    top: 0;
+    top: 20px;
     right: 0;
     left: 0;
-    height: 80px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -70,17 +70,18 @@ body, html{
     justify-content: space-between;
     align-items: center;
     padding: 0 10vw 0 10vw;
-    height: 10vh;
+    height: 100vh;
 }
-
+*/
 .landingText h1{
-    font-size: 6vw;
-    margin: 0 !important;
+    font-size: 10vw;
+    margin: 110px !important;
+    top: 0px;
 }
 
 .landingText h3{
     margin: 6px !important;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.8;
     color: #777777;
     font-family: "Playfair Dispaly", serif;
@@ -98,6 +99,7 @@ body, html{
 
 .landingText .btn a{
     font-size: 1.2vw;
+    font-weight: 10vw;
     color: #fff;
 }
 
@@ -108,10 +110,157 @@ body, html{
 /*Services CSS */
 
 .about{
-    height: 600px;
-    padding: 50px;
+    height: 10px;
+    padding: 500px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
+/*
+.aboutText{
+    position: relative;
+    padding: 0 0px;
+    height: inherit;
+}
+*/
+.aboutText h1 {
+    position: relative;
+    left: 110px;
+}
+/*
+.aboutText img {
+    width: 10vw;
+    position: absolute;
+    top: 50px;
+}
+*/
+
+.aboutList{
+    width: 50%;
+}
+
+ol{
+    list-style: none;
+    color: #e0501b;
+}
+
+ol li{
+    font-size: 21px;
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+li p{
+    font: 16px;
+    color: #000;
+    padding-left: 60px;
+    line-height: 20px;
+    opacity: 0.6;
+}
+
+li p{
+    position: relative;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+
+/* Info Section */
+
+.infoSection{
+    height: 600px;
+}
+
+.infoHeader{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.infoCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0 40px 0;
+}
+
+.infoCards .card{
+    position: relative;
+    height: 360px;
+    width: 360px;
+    background: #fff;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.9), 0 10px 10px rgba(0, 0, 0, 0.09);
+}
+
+.infoCards .one .cardoneImg{
+    width: 150px;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
+
+.infoCards .two .cardtwoImg{
+    width: 150px;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
+
+.infoCards .three .cardthreeImg{
+    width: 150px;
+    position: absolute;
+    top: -50px;
+    right: -30px;
+}
+
+.cardbgone{
+    height: 150px;
+    background-color: #fff;
+}
+
+.cardbgtwo{
+    height: 150px;
+    background-color: #fff;
+}
+
+.cardbgthree{
+    height: 150px;
+    background-color: #fff;
+}
+.cardContent{
+    padding: 0 20px;
+}
+
+.cardContent p{
+    line-height: 30px;
+    opacity: 0.6;
+}
+
+.cardContent .cardBtn{
+    position: absolute;
+    right: 20px;
+    padding: 10px;
+    background-color: #ededed;
+    width: 25px;
+    height: 20px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.2s;
+}
+
+.cardContent .cardBtn:hover{
+    background-color: #2f8be0;
+}
+
+.cardContent .cardBtn .cardIcon{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 16px;
+}
+
+/* Banner CSS */
