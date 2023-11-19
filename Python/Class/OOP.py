@@ -152,7 +152,7 @@ print(object.attr1)
 print(object.attr2)
 '''
 
-
+'''
 class Cars():
     def __init__(self, company, model, color) -> None:
         self.company = company
@@ -179,3 +179,46 @@ print("The company of the car is", audi.company)
 print("The color of the car is", audi.color)
 print("The model of the dodge is", dodge.model)
 print("The model of Lemborgani is", lemborgani.model)
+'''
+
+'''
+class Dog:
+    animal = 'dog'
+    def __init__(self, breed, color) -> None:
+        self.breed = breed
+        self.color = color
+        pass
+
+Rodger = Dog("Pug", "brown")
+Buzo = Dog("Bulldog", "black")
+
+print("Rodger details:")
+print("Rodger is a", Rodger.animal)
+print("Breed:", Rodger.breed)
+print("Color:", Rodger.color)
+
+print("\nBuzo details:")
+print("Buzo is a", Buzo.animal)
+print("Breed:", Buzo.breed)
+print("Color:", Buzo.color)
+
+print("\nAccessing class variable using class name.")
+print(Dog.animal)
+'''
+
+'''
+class Dog:
+    animal = "dog"
+    def __init__(self, breed) -> None:
+        self.breed = breed
+        pass
+    def setColor(self, color):
+        self.color = color
+    def getColor(self):
+        return self.color
+    
+Rodger = Dog("pug")
+Rodger.setColor("brown")
+print(Rodger.getColor())
+'''
+
