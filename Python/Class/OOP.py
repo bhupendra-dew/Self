@@ -222,3 +222,64 @@ Rodger.setColor("brown")
 print(Rodger.getColor())
 '''
 
+# Creating a simple class in Python
+'''
+class Animal:
+    def __init__(self, name) -> None:
+        self.name = name
+        pass
+    def speak(self):
+        return f"{self.name} says Hello!!!"
+    
+dog = Animal("Ishaan")
+cat = Animal("Pussy")
+print(dog.speak())
+print(cat.speak())
+'''
+
+# Creating a subclass(Inheritance)
+'''
+class Anime:
+    def __init__(self, name) -> None:
+        self.name = name
+        pass
+
+    def Name(self):
+        return f"The anime name is {self.name}"
+    
+class OP(Anime):
+    def Name(self):
+        return f"The main character is {self.name}"
+    
+anime = Anime("One Punch MAN")
+op = OP("Sitama")
+
+print(anime.Name())
+print(op.Name())
+'''
+
+# Using the super() function
+'''
+class Animal:
+    def __init__(self, name) -> None:
+        self.name = name
+        pass
+    def speak(self):
+        return f"{self.name} says hello!"
+    
+class Dog(Animal):
+    def __init__(self, name, breed) -> None:
+        super().__init__(name)
+        self.breed = breed
+
+dog = Dog("Charlie", "Bulldog")
+print(dog.name)
+print(dog.breed)
+'''
+
+# Creating a property
+
+class Circle:
+    def __init__(self, radius) -> None:
+        self.radius = radius
+        pass
