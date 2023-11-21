@@ -469,7 +469,7 @@ print(s)
 '''
 
 # Using Mixin classes in Python
-
+'''
 class Mixin1(object):
     def test(self):
         print("Mixin1")
@@ -483,3 +483,4 @@ class MyClass(Mixin1, Mixin2):
 
 obj = MyClass()
 obj.test()
+'''
