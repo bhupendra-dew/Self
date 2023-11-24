@@ -484,3 +484,4 @@ class MyClass(Mixin1, Mixin2):
 obj = MyClass()
 obj.test()
 '''
+
