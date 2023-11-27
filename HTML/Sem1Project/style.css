@@ -264,6 +264,13 @@ li p{
     align-items: center;
     transition: all ease-in-out 0.2s;
 }
+.cardIcon{
+    position: relative;
+    top: 0px;
+    left: 3px;
+    width: 20px;
+}
+
 /*
 .cardContent .cardBtn:hover{
     background-color: #2f8be0;
@@ -277,3 +284,53 @@ li p{
 }
 */
 /* Banner CSS */
+
+.banner{
+    height: 400px;
+    background-color: #2f8be0;
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0 50px 0;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bannerText h1{
+    font-size: 3vw;
+    color: #000;
+    font-weight: 600;
+}
+
+.bannerText img{
+    width: 10vw;
+    margin-right: 20px;
+}
+
+.bannerImg img{
+    width: 20vw;
+}
+
+/* Footer CSS */
+.footer{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.footerlinks a{
+    margin: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.footerlinks .mainlink{
+    color: #e0501b;
+}
+
+.footer a:hover{
+    color: #007bff;
+}
