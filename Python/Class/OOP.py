@@ -485,3 +485,61 @@ obj = MyClass()
 obj.test()
 '''
 
+'''
+class Dog:
+    species = "Canis familiaris"
+
+    def __init__(self, name, age) -> None:
+        self.name = name
+        self.age = age
+        pass
+
+    # Instance method
+    def description(self):
+        return f"{self.name} is {self.age} years old."
+    
+    # Another instance method
+    def speak(self, sound):
+        return f"{self.name} says {sound}"
+    
+mile = Dog("Mile", 4)
+mile.description()
+mile.speak("Woof Woof")
+print(mile.description())
+print(mile.speak("Woof Woof"))
+'''
+
+'''
+class Dog:
+    species = "Canis familiaris"
+    def __init__(self, name, age, breed) -> None:
+        self.name = name
+        self.age = age
+        self.breed = breed
+        pass
+
+    def __str__(self) -> str:
+        return f"{self.name} is {self.age} years old."
+    
+    def speak(self, sound):
+        return f"{self.name} says {sound}"
+    
+miles = Dog("Miles", 4, "Jack Russell Terrier")
+buddy = Dog("Buddy", 9, "Dachshund")
+jack = Dog("Jack", 3, "Bulldog")
+jimmy = Dog("Jimmy", 5, "Rat Terrier")
+print(miles.__str__())
+print(buddy.__str__())
+print(jack.__str__())
+print(jimmy.__str__())
+print(miles.speak("Woof Woof"))
+print(buddy.speak("Woof Woof"))
+print(jack.speak("Woof Woof"))
+print(jimmy.speak("Woof Woof"))
+print(miles.species)
+print(buddy.species)
+print(jack.species)
+print(jimmy.species)
+'''
+
+
