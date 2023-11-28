@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style>
+		body {
+			background-color: #f1f1f1;
+		}
+		form {
+			background-color: white;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+			width: 50%;
+			margin: auto;
+		}
+		input[type=text], input[type=password], input[type=email] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		button[type=submit] {
+			background-color: #007bff;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+		}
+		button[type=submit]:hover {
+			background-color: #45a049;
+		}
+		.container {
+			padding: 16px;
+		}
+		h1 {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<h1>Registration Form</h1>
+		<div class="container">
+			<label for="name"><b>Name</b></label>
+			<input type="text" placeholder="Enter Name" name="name" required>
+
+			<label for="email"><b>Email</b></label>
+			<input type="email" placeholder="Enter Email" name="email" required>
+
+			<label for="password"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required>
+
+			<label for="confirm_password"><b>Confirm Password</b></label>
+			<input type="password" placeholder="Confirm Password" name="confirm_password" required>
+
+			<label for="phone"><b>Phone Number</b></label>
+			<input type="text" placeholder="Enter Phone Number" name="phone" required>
+
+			<label for="address"><b>Address</b></label>
+			<input type="text" placeholder="Enter Address" name="address" required>
+
+			<label for="city"><b>City</b></label>
+			<input type="text" placeholder="Enter City" name="city" required>
+
+			<label for="state"><b>State</b></label>
+			<input type="text" placeholder="Enter State" name="state" required>
+
+			<label for="zip"><b>Zip Code</b></label>
+			<input type="text" placeholder="Enter Zip Code" name="zip" required>
+
+            <a href="Medical Thankyou.html">
+			    <button type="submit" >Register</button>
+            </a>
+		</div>
+	</form>
+</body>
+</html>
