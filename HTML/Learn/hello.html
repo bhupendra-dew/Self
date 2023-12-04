@@ -239,7 +239,7 @@
     grade D represents not so good 
     grade E represents fail and 
     default cases is unknown grade such that while enterng switch block print enterig swith block and at the end block exiting swich block-->
-
+<!--
 <!DOCTYPE html>
 <html>
     <title>Helloo </title>
@@ -274,4 +274,30 @@
             document.write("Exitingg the switch cases<br/>")    
         </script>
     </body>
+</html>
+-->
+
+
+<DOCTYPE html>
+<html>
+    <head>
+        <title>Armstrong number</title>
+    </head>
+    <body>
+        <script>
+            let number = prompt("Enter the number: ");
+            let sum = 0;
+            let temp = number;
+            while (temp > 0){
+                let rem = temp % 10;
+                sum = sum + (rem * rem * rem);
+                temp = parseInt(temp / 10);
+            }
+            if (number == sum){
+                document.write("Armstrong number");
+            }
+            else{
+                document.write("Not an Armstrong number");
+            }
+        </script>
 </html>

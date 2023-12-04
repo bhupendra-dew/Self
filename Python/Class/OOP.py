@@ -542,4 +542,43 @@ print(jack.species)
 print(jimmy.species)
 '''
 
+# WAP to create student class which contains attribuetes name, age, gender, cgpa and actions get(), display()
+# Inherit the stident class in LPU and PTU which contains calculatePercentage()
+# LPU calculatePercentage() = cgpa * 10
+# PTU calculatePercentage() = cgpa * 9.5
+import random 
+from random import shuffle
 
+class Student:
+    def __init__(self, name) -> None:
+        self.name = name
+        pass
+
+    def getattributes(self):
+        self.name = input("Enter name: ")
+        
+
+    def display(self):
+        print("Name:", str(self.name))
+
+    def __repr__(self) -> str:
+        return f"{self.name}"
+
+l = []
+for i in range(5):
+    s = Student(None)
+    s.getattributes()
+    str(s)
+    l.append(s)
+print(l)
+print(shuffle(l))
+
+'''
+l = [s1, s2, s3, s4]
+for i in l:
+    i.getattributes()
+    i.display()
+    print()
+    random.shuffle(l)
+print(l)
+'''
