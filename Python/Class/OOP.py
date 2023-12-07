@@ -546,6 +546,7 @@ print(jimmy.species)
 # Inherit the stident class in LPU and PTU which contains calculatePercentage()
 # LPU calculatePercentage() = cgpa * 10
 # PTU calculatePercentage() = cgpa * 9.5
+'''
 import random 
 from random import shuffle
 
@@ -572,6 +573,7 @@ for i in range(5):
     l.append(s)
 print(l)
 print(shuffle(l))
+'''
 
 '''
 l = [s1, s2, s3, s4]
@@ -582,3 +584,68 @@ for i in l:
     random.shuffle(l)
 print(l)
 '''
+
+
+class Person:
+    def n(self, name, age, state, gender) -> None:
+        self.name = name
+        self.age = age
+        self.state = state
+        self.gender = gender
+        pass
+
+    def getattributes(self):
+        self.name = input("Enter name: ")
+        self.age = int(input("Enter age: "))
+        self.state = input("Enter state(Wake / Sleep): ")
+        self.gender = input("Select your gender (Male / Female): ")
+        pass
+
+    def state(self):
+        if self.state == "Wake":
+            print("You are in Wake")
+            a = input("What you want to do?(Eat / Play / Shopping / Study / Movie): ")
+            self.a = a
+        else: 
+            print("You are in Sleep")
+            print("You can't do anything")
+        pass
+
+    def Eat(self):
+        if self.a == "Eat":
+            print("You are eating")
+        else:
+            print("You are not eating")
+        pass
+
+    def Play(self):
+        if self.a == "Play":
+            print("You are playing")
+        else:
+            print("You are not playing")
+        pass
+
+    def Shopping(self):
+        if self.a == "Shopping":
+            print("You are shopping")
+        else:
+            print("You are not shopping")
+        pass
+
+    def Study(self):
+        if self.a == "Study":
+            print("You are studying")
+        else:
+            print("You are not studying")
+        pass
+
+    def Movie(self):
+        if self.a == "Movie":
+            print("You are watching movie")
+        else:
+            print("You are not watching movie")
+        pass
+
+
+a = Person()
+a.getattributes()
