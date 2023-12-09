@@ -559,3 +559,59 @@ print(operator.getitem(li, 3))
 '''
 
 
+# Python code to demonstrate the working of setitem(), delitem() and getitem()
+
+'''
+import operator
+
+li = [1, 5, 6, 7, 8]
+
+print("The original list is :", end = " ")
+for i in range(0, len(li)):
+    print(li[i], end = " ")
+print("\r")
+operator.setitem(li, slice(1, 4), [2, 3, 4])
+print("The modified list after setitem() is :", end = " ")
+
+for i in range(0, len(li)):
+    print(li[i], end = " ")
+print("\r")
+operator.delitem(li, slice(2, 4))
+print("The modified list after delitem() is :", end = " ")
+
+for i in range(0, len(li)):
+    print(li[i], end = " ")
+print("\r") 
+
+print("The 1st and 2nd elemnet of the list is :", end = " ")
+print(operator.getitem(li, slice(0, 2)))
+'''
+
+#  Python code to demonstrate the working of concat() and contains()
+'''
+import operator
+s1 = "geeksfor"
+s2 = "geeks"
+print("The concatenated string is :", end = " ")
+print(operator.concat(s1, s2))
+
+if (operator.contains(s1, s2)):
+    print("geeksfor contains geeks")
+else:
+    print("geeksfor does not contain geeks")
+'''
+
+# Python code to demonstrate working of and_(), or_(), xor(), invert()
+
+import operator
+a = 1
+b = 0
+print("The bitwise and of a and b is :", end = " ") 
+print(operator.add(a, b))
+print("The bitwise or of a and b is :", end = " ")
+print(operator.or_(a, b))
+print("The bitwise xor of a and b is :", end = " ")
+print(operator.xor(a, b))
+print("The inverted value of a is :", end = " ")
+print(operator.invert(a))
+
