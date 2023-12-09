@@ -584,8 +584,7 @@ for i in l:
     random.shuffle(l)
 print(l)
 '''
-
-
+'''
 class Person:
     def n(self, name, age, state, gender) -> None:
         self.name = name
@@ -600,47 +599,47 @@ class Person:
         self.state = input("Enter state(Wake / Sleep): ")
         self.gender = input("Select your gender (Male / Female): ")
         pass
-
-    def state(self):
-        if self.state == "Wake":
+        
+class state(Person):
+        if Person.state == "Wake":
             print("You are in Wake")
             a = input("What you want to do?(Eat / Play / Shopping / Study / Movie): ")
-            self.a = a
+            Person.a = a
         else: 
             print("You are in Sleep")
             print("You can't do anything")
         pass
 
-    def Eat(self):
-        if self.a == "Eat":
+class Eat(Person):
+        if Person.a == "Eat":
             print("You are eating")
         else:
             print("You are not eating")
         pass
 
-    def Play(self):
-        if self.a == "Play":
+class Play(Person):
+        if Person.a == "Play":
             print("You are playing")
         else:
             print("You are not playing")
         pass
 
-    def Shopping(self):
-        if self.a == "Shopping":
+class Shopping(Person):
+        if Person.a == "Shopping":
             print("You are shopping")
         else:
             print("You are not shopping")
         pass
 
-    def Study(self):
-        if self.a == "Study":
+class Study(Person):
+        if Person.a == "Study":
             print("You are studying")
         else:
             print("You are not studying")
         pass
 
-    def Movie(self):
-        if self.a == "Movie":
+class Movie(Person):
+        if Person.a == "Movie":
             print("You are watching movie")
         else:
             print("You are not watching movie")
@@ -649,3 +648,6 @@ class Person:
 
 a = Person()
 a.getattributes()
+'''
+
+
