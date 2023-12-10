@@ -602,7 +602,7 @@ else:
 '''
 
 # Python code to demonstrate working of and_(), or_(), xor(), invert()
-
+'''
 import operator
 a = 1
 b = 0
@@ -614,4 +614,88 @@ print("The bitwise xor of a and b is :", end = " ")
 print(operator.xor(a, b))
 print("The inverted value of a is :", end = " ")
 print(operator.invert(a))
+'''
+'''
+def reverse(s):
+    str = " "
+    for i in s:
+        str = i + str
+    return str
+
+s = "Geeks for Geeks"
+
+print("The original string is : ", end = " ")
+print(s)
+
+print("The reserved string(using loops) is : ", end = " ")
+print(reverse(s))
+'''
+'''
+def reverse(s):
+    if len(s) == 0:
+        return s
+    else:
+        return reverse(s[1 : ]) + s[0]
+    
+s = "Geeksforgeeks"
+
+print("The original string is : ", end = " ")
+print(s)
+
+print("The reversed string (using recursion) is : ", end = " ")
+print(reverse(s))
+'''
+'''
+def createStack():
+    stack = []
+    return stack
+
+def size(stack):
+    return len(stack)
+
+def isEmpty(stack):
+    if size(stack) == 0:
+        return True
+    
+def push(stack, item):
+    stack.append(item)
+
+def pop(stack):
+    if isEmpty(stack):
+        return
+    return stack.pop()
+
+def reverse(string):
+    n = len(string)
+    stack = createStack()
+    for i in range(0, n, 1):
+        push(stack, string[i])
+
+    string = " "
+
+    for i in range(0, n, 1):
+        string += pop(stack)
+    return string
+
+s = "Geeksforgeeks"
+print("The original string is :", end = " ")
+print(s)
+print("The reversed string(using stack) is :", end = " ")
+print(reverse(s))
+'''
+'''
+def reverse(String):
+    String = String[::-1]
+    return String
+
+s = "geeksforgeeks"
+
+print("The original string is :", end = " ")
+print(s)
+
+print("The reversed string is : ", end = " ")
+print(reverse(s))
+'''
+
+
 
