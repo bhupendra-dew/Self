@@ -765,5 +765,26 @@ print("\nDeleting entire String: ")
 print(String1)
 '''
 
+str1 = " "
+str2 = "geeks"
 
+print(repr(str1 and str2))
+print(repr(str2 and str1))
+print(repr(str1 or str2))
+print(repr(str2 or str1))
+
+str1 = "for"
+
+print(repr(str1 and str2))
+print(repr(str2 and str1))
+print(repr(str1 or str2))
+print(repr(str2 or str1))
+
+str1 = "geeks"
+
+print(repr(not str1))
+
+str1 = ""
+
+print(repr(not str1))
 

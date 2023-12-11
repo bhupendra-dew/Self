@@ -1,7 +1,5 @@
-let num = 20;
-if (num % 2 == 0) {
-    document.write("Given number is an even number.");
+function sum(a, b) {
+    return a + b;
 }
-if (num % 2 !== 0){
-    document.write("The given number is an odd number.")
-}
+
+document.write(sum(5, 3));  // Outputs: 8
