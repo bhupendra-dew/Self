@@ -697,5 +697,73 @@ print("The reversed string is : ", end = " ")
 print(reverse(s))
 '''
 
+# Reverse a string in Python using list comprehension()
+'''
+def reverse(string):
+    string = [string[i] for i in range(len(string) -1, -1, -1)]
+    return "".join(string)
+
+s = "geeksforgeeks"
+print("The original string is : ", s)
+print("The reversed string is : ", reverse(s))
+'''
+
+
+# Reverse string in Python using the function call
+'''
+def reverse(string):
+    string = list(string)
+    string.reverse()
+    return "".join(string)
+s = "BhupendraDewangan"
+print("The original string is : ", s)
+print("The revresed string is : ", reverse(s))
+'''
+'''
+gfg = "geeksforgeeks"
+gfg = "".join(reversed(gfg))
+print(gfg)
+'''
+'''
+String1 = "Hello, I'm a Geek"
+print("Initail String : ")
+print(String1)
+
+list1 = list(String1)
+list1[2] = 'p'
+String2 = "".join(list1)
+print("\nUpdating character at 2nd Index: ")
+print(String2)
+
+String3 = String1[0:2] + 'p' + String1[3:]
+print(String3)
+'''
+'''
+String1 = "Hello, I'am a Geek"
+print("Initial String: ")
+print(String1)
+
+# Updating the string
+String1 = "Welcome to the Geek World"
+print("\nUpdated String: ")
+print(String1)
+'''
+'''
+String1 = "Hello, I'm a Geek"
+print("Initial String: ")
+print(String1)
+String2 = String1[0:2] + String1[3:]
+print("\nDeleting character at 2nd Index: ")
+print(String2)
+'''
+'''
+String1 = "Hello, I'm a Geek"
+print("Initial String: ")
+print(String1)
+del String1
+print("\nDeleting entire String: ")
+print(String1)
+'''
+
 
 
