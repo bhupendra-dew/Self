@@ -764,7 +764,7 @@ del String1
 print("\nDeleting entire String: ")
 print(String1)
 '''
-
+'''
 str1 = " "
 str2 = "geeks"
 
@@ -787,4 +787,19 @@ print(repr(not str1))
 str1 = ""
 
 print(repr(not str1))
+'''
+
+
+l = []
+a = int(input("Enter the no. of elements in list : "))
+for i in range(0, a):
+    b = int(input())
+    l.append(b)
+print(l)
+for i in l:
+    if i % 2 == 0:
+        print(i, end=" ")
+    else:
+        print("odd", end=" ")
+print()
 
