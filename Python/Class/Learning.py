@@ -272,6 +272,66 @@ def gcd(num1, num2):
     return gcd(num2 % num1, num1)
 print(f"GCD of the numbers is:", gcd(num1, num2))
 '''
+'''
+### Shubhams Question ###
+found = False
 
-x = int(input("Enter a number: "))
-if x % 3 == 0 and 
+def nums(a):
+    sum = 0
+    while a > 0:
+        sum += a % 10
+        a //= 10          
+    return sum
+
+x = int(input("Enter start: "))
+y = int(input("Enter end: "))
+for x in range(x, y + 1):
+    if x % 3 == 0:
+        if x % 7 == 0 or x % 7 > 4:
+            if nums(x) % 6 == 0:
+                found = True
+                print(x, end=" ")
+    
+if found == False:
+    print("No such number found")
+'''
+# Multiplication table of a given number
+'''
+a = int(input("Enter the number: "))
+for i in range(1, 11):
+    print(f"{a} * {i} = {a * i}")
+'''
+
+# Maximum efficiency of a list of numbers
+'''
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+a = l.shuffle()
+l1 = []
+for i in range (a):
+    for j in range(i + 1, (a)):
+        l1.append(l[i] * l[j])
+print(l1)
+print(max(l1))
+'''
+'''
+year = int(input("Enter the year: "))
+if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
+    print("Leap year")
+else:
+    print("Not a leap year")
+'''
+
+def fib(n):
+    if n <= 1:
+        return n
+    else:
+        return fib(n - 1) + fib(n - 2)
+    
+count = int(input("Enter the limit: "))
+
+if count <= 0:
+    print("Enter the number greater than 0")
+else:
+    for i in range(count):
+        print(fib(i), end = " ")
+
