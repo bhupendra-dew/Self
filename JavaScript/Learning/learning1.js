@@ -48,4 +48,46 @@ courses[3] = "php"
 courses[4] = "React"
 document.write("Array after initializing: ", courses)
 */
+/*
+function myFun () {
+	document.getElementById('demo')
+		.innerHTML = 'Paragraph Changed'
+}
+*/
+/*
+let petName = 'Rocky' // Global variable
+myFunction()
 
+function myFunction() {
+	fruit = 'apple'; // Considered global
+	console.log(typeof petName +
+		'- ' +
+		'My pet name is ' +
+		petName)
+}
+
+console.log(
+	typeof petName +
+	'- ' +
+	'My pet name is ' +
+	petName +
+	'Fruit name is ' +
+	fruit)
+*/
+/*
+myfunction();
+anotherFunc();
+let petName;
+function myfunction() {
+	let petName = "Sizzer"; // local variable
+	console.log(petName);
+}
+function anotherFunc() {
+	let petName = "Tom"; // local variable
+	console.log(petName);
+}
+console.log(petName);
+*/
+
+console.log("Hello World");
+document.write("Hello World");

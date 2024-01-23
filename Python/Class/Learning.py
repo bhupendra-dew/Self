@@ -335,6 +335,7 @@ else:
     for i in range(count):
         print(fib(i), end = " ")
 '''
+'''
 class repalce:
     def rep(self, a, b):
         self.a = a
@@ -358,7 +359,7 @@ for i in range(len(l)):
         a = rod.rep(l[i], "*")
         b.append(a)
 print(b)
-
+'''
 '''
 a = input("Enter the number: ").split(",")
 l = []
@@ -371,5 +372,330 @@ for i in a:
         l.append("*")
 print(l)
 '''
+'''
+def leibniz(n):
+    t_sum = 0
+    for i in range(n):
+        term = (-1) ** i / (2 * i + 1)
+        t_sum = t_sum + term
 
-# Pacal triangle formula
+    return t_sum * 4
+
+terms = int(input("Enter number of terms: "))
+
+pi = leibniz(terms)
+
+print("Pi =", pi)
+'''
+'''
+def is_valid_triangle(a, b, c):
+    if a + b >= c and b + c >= a and c + a >= b:
+        return True
+    else:
+        return False
+    
+side_a = float(input("Enter the length of side a: "))
+side_b = float(input("Enter the length of side b: "))
+side_c = float(input("Enter length of side c: "))
+
+if is_valid_triangle(side_a, side_b, side_c):
+    print("Triangle is valid.")
+else:
+    print("Triangle is Invalid.")
+'''
+'''
+def is_valid_triangle(a, b, c):
+    if a + b + c == 180 and a != 0 and b != 0 and c != 0:
+        return True
+    else:
+        return False
+    
+angle_a = float(input("Enter angle a: "))
+angle_b = float(input("Enter angle c: "))
+angle_c = float(input("Enter number c: "))
+
+if is_valid_triangle(angle_a, angle_b, angle_c):
+    print("The triangle is Valid.")
+else:
+    print("Triangle is invald.")
+'''
+'''
+def is_valid_triangle(a, b, c):
+    if a + b >= c and b + c >= a and c + a >= b:
+        return True
+    else:
+        return False
+    
+def type_of_triangle(a, b, c):
+    if a == b and b == c:
+        print("Triangle is Equilateral.")
+    elif a == b or b == c or a == c:
+        print("Triangle is Isoceles.")
+    else:
+        print("Triangle is Scalane")
+
+side_a = float(input("Enter the length of side a: "))
+side_b = float(input("Enter the length of side b: "))
+side_c = float(input("Enter the length of side c: "))
+
+if is_valid_triangle(side_a, side_b, side_c):
+    type_of_triangle(side_a, side_b, side_c)
+
+else:
+    print("Triangle is not possible from the given sides.")
+'''
+
+# Python program to Check Palindrome Number
+'''
+number = int(input("Enter the number: "))
+copy = number
+reverse = 0
+while number != 0:
+    remainder = number % 10
+    reverse = reverse * 10 + remainder
+    number = number // 10
+
+# Check for Palindrome
+if copy == reverse:
+    print("%d is PALINDROME" %(copy))
+else:
+    print("%d is NOT PALINDROME" %(copy))
+'''
+
+# Check Prime
+'''
+number = int(input("Enter number: "))
+flag = 1
+for i in range(2, int(number / 2)):
+    if number % i == 0:
+        flag = 0
+        break
+
+if flag == 1 and number >= 2:
+    print("PRIME")
+
+else:
+    print("Not PRIME")
+'''
+
+### Creating a simple matrix using Python
+
+# Method 1 : Creating a matrix with the List of list
+'''
+matrix = [[1,2,3,4], [5,6,7,8], [9,10,11,12]]
+print("Matrix: ", matrix)
+'''
+# Method 2: Taking Matrix input form the user in Python
+'''
+Row = int(input("Enter the number of rows: "))
+Column = int(input("Enter the number of column: "))
+
+# Initialize Matrix
+matrix = []
+print("Enter the entries row wise: ")
+for row in range(Row):
+    a = []
+    for column in range(Column):
+        a.append(int(input()))
+    matrix.append(a)
+
+for row in range(Row):
+    for column in range(Column):
+        print(matrix[row][column], end = " ")
+    print()
+'''
+
+# Creating a matrix using lsit comprehension
+'''
+matrix = [[column for column in range(5)]for row in range (5)]
+print(matrix)
+'''
+# Assigning value to individual cell in Matrx
+'''
+X = [[1,2,3], [4,5,6], [7,8,9]]
+row = column = 1
+X[row][column] = 11
+print(X)
+'''
+
+# Assign a value to an individual cell using the negative indexing in Matrix.
+'''
+X = [[1,2,3], [4,5,6], [7,8,9]]
+row = -2
+column = -1
+X[row][column] = 21
+print(X)
+'''
+
+### Accessing Values in a Matrix
+
+# Method 1: Acessing matrix values
+'''
+X = [[1,2,3], [4,5,6], [7,8,9]]
+print("Matrix at 1 row and 3 column = ", X[0][2])
+print("Matrix at 3 row and 3 column = ", X[2][2])
+'''
+
+# Method 2: Accessing Matrix values using negative indexing. 
+'''
+import numpy as np
+X = [[1,2,3], [4,5,6], [7,8,9]]
+print(X[-1][-2])
+'''
+
+### Mathematical Operators with Matrix in Python
+
+# Example 1 : Adding values to a matrix with a for loop in Python
+'''
+X = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+Y = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+
+result = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+for row in range(len(X)):
+    for column in range(len(X[0])):
+        result[row][column] = X[row][column] + Y[row][column]
+
+for r in result:
+    print(r)
+'''
+
+# Example 2 : Adding and Subtracting values to a matrix with the list comrehension
+'''
+X = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+Y = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+
+result = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+Add_result = [[X[row][column] + Y[row][column] for column in range(len(X[0]))] for row in range(len(X))]
+Sub_result = [[X[row][column] - Y[row][column] for column in range(len(X[0]))] for row in range(len(X))]
+
+print("Matrix addition")
+for r in Add_result:
+    print(r)
+
+print("\nMatrix Subtraction")
+for r in Sub_result:
+    print(r)
+'''
+
+# Python program to multiply and divide two matrices
+'''
+X = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+Y = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+
+rmatrix = [[0,0,0], [0,0,0], [0,0,0]]
+for row in range(len(X)):
+    for column in range(len(X[0])):
+        rmatrix[row][column] = X[row][column] * Y[row][column]
+
+print("Matrix Multiplication")
+for r in rmatrix:
+    print(r)
+
+for j in range(len(X)):
+    for j in range(len(X[0])):
+        rmatrix[row][column] = X[row][column] // Y[row][column]
+        
+
+print("\nMatrix Division")
+for v in rmatrix:
+    print(v)
+'''
+'''
+F = False
+class over:
+    def __init__(self, x) -> None:
+        self.x = x
+        pass
+    def __add__(self, other):
+        if F == False: 
+            print("The value of ob1:", self.x)
+            print("The value of ob2:", other.x)
+            print("The addition of two objects is:", end="")
+            return (self.x + other.x)
+        else:
+            return True
+
+ob = over(30)
+'''
+
+
+# Transpose in Matrix
+'''
+X = [[9,8,7], [6,5,4], [3,2,1]]
+result = [[0,0,0], [0,0,0], [0,0,0]]
+
+for row in range(len(X)):
+    for column in range(len(X[0])):
+        result[column][row] = X[row][column]
+
+for r in result:
+    print(r)
+'''
+
+### Matrix using Numpy
+
+# Creating a matrix using Numpy
+'''
+import numpy as np
+arry = np.int128(10, size=(3,3))
+print(arry)
+'''
+
+# Matrix mathematical operations in python using Numpy
+'''
+import numpy
+x = numpy.array([1,2], [4,5])
+y = numpy.array([7,8], [9,10])
+
+print("The element wise addition of matrix is: ", )
+print(numpy.add(x, y))
+print("The element wise subtraction of matrix is: ", )
+print(numpy.subtract(x, y))
+print("The element wise multiplication of matrix is: ", )
+print(numpy.multiply(x, y))
+print("The element wise division of matrix is: ", )
+print(numpy.divide(x, y))
+'''
+'''
+import numpy as np
+array = np.random.randint(10, size = (3,3))
+print(array)
+'''
+
+# Matrix mathematical operations in python using Numpy
+'''
+import numpy
+
+x = numpy.array([1,2], [4,5])
+y = numpy.array([7,8], [9,10])
+
+print("The element wise addition of matrix is: ", ) 
+print(numpy.add(x, y))
+print("The element wise subtraction of matrix is: ", )
+print(numpy.subtract(x, y))
+print("The element wise multiplication of matrix is: ", )
+print(numpy.multiply(x, y))
+print("The element wise division of matrix is: ", )
+print(numpy.divide(x, y))
+'''
+
+# Dot and cross product with Matrix in Python using Numpy
+'''
+import numpy 
+
+x = numpy.array([1,2,3], [4,5,6], [7,8,9])
+y = numpy.array([9,8,7], [6,5,4], [3,2,1])
+
+dotproduct = numpy.dot(x, y)
+print("The dot product of two matrix is: ", dotproduct)
+
+cr ossproduct = numpy.cross(x, y)
+print("The cross product of two matrix is: ", crossproduct)
+'''
+
+import numpy
+matrix = [[1,2], [4,5]]
+print("The matrix is: ")
+print("\n", numpy.transpose(matrix))
